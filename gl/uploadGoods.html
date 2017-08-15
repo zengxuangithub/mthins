@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>上传商品</title>
+		<link rel="stylesheet" href="../css/uploadGoods.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script type="text/javascript" src="../js/jquery.min.js" ></script>
+		<script type="text/javascript" src="../js/uploadGoods.js" ></script>
+		
+	</head>
+	<body>
+	<form action="../API/uploadGoods.php" method="post" enctype="multipart/form-data">
+		
+		
+		<div>
+			<label for="file">图片</label>
+			<input  type="file" name="file" id="file"/>
+			<img src="" id="img" class="img"/>
+			
+		</div>
+		<div>
+			<label>标题</label>
+			<input type="text" name="title" id="title"  />
+		</div>
+		<div >
+			<label>价格</label>
+			<input type="text" name="price" />
+			
+		</div>
+		
+		<div>
+			<label>淘宝价格</label>
+			<input type="text" name="taobao_price" />
+			
+		</div>
+		<div >
+			<label>券值</label>
+			<input type="text" name="quan_num"  />
+			
+		</div>
+		<div>
+			<label>商品链接</label>
+			<input type="text" name="url"   />
+			
+		</div>
+
+		<div>
+			<input type="submit" name="submit" value="submit" />
+			
+		</div>
+
+	</form>
+	</body>
+</html>
