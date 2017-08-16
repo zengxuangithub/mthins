@@ -1,8 +1,24 @@
 form
 {
-	width: 80%;
+	width: 400px;
 	margin: 100px auto;
 	text-align: center;
+}
+form div:not(.picBox)
+{
+	width:400px;
+	height: 30px;
+	margin: 10px auto;
+}
+form .mylabel
+{
+	height: 100px;
+	
+	line-height: 30px;
+}
+.myinput
+{
+	height: 100%;
 }
 .img
 {
@@ -11,3 +27,12 @@ form
 	margin: auto auto;
 	
 }
+.btn
+
+{
+	width: 100px;
+	margin: 10px auto;
+	height: 30px;
+	border: none;
+	background-color:deepskyblue;
+} 

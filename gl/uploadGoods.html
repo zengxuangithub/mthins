@@ -13,40 +13,40 @@
 	<form action="../API/uploadGoods.php" method="post" enctype="multipart/form-data">
 		
 		
-		<div>
+		<div class="picBox">
 			<label for="file">图片</label>
 			<input  type="file" name="file" id="file"/>
 			<img src="" id="img" class="img"/>
 			
 		</div>
 		<div>
-			<label>标题</label>
-			<input type="text" name="title" id="title"  />
+			<label class="mylabel">标题</label>
+			<input class="myinput" type="text" name="title" id="title"  />
 		</div>
 		<div >
-			<label>价格</label>
-			<input type="text" name="price" />
+			<label class="mylabel">价格</label>
+			<input class="myinput" type="number" name="price" />
 			
 		</div>
 		
 		<div>
 			<label>淘宝价格</label>
-			<input type="text" name="taobao_price" />
+			<input class="myinput" type="number" name="taobao_price" />
 			
 		</div>
 		<div >
 			<label>券值</label>
-			<input type="text" name="quan_num"  />
+			<input  class="myinput" type="number" name="quan_num"  />
 			
 		</div>
 		<div>
 			<label>商品链接</label>
-			<input type="text" name="url"   />
+			<input class="myinput" type="text" name="url"   />
 			
 		</div>
 
 		<div>
-			<input type="submit" name="submit" value="submit" />
+			<input class="btn" type="submit" name="submit" value="确认" />
 			
 		</div>
 

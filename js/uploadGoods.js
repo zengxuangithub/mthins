@@ -10,7 +10,7 @@ $(function()
 			$("#img").css("width","200px");
 		}
         
-		alert('文件改变了');
+		//alert('文件改变了');
 	}
 	);
 	
