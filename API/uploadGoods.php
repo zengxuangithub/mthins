@@ -15,7 +15,10 @@ else
       }
     else
       {
-      	if(move_uploaded_file($_FILES["file"]["tmp_name"],"../goodsPic/".$_FILES["file"]["name"]))
+      	$timestr=time();
+      	$pic_add=urldecode("http://www.mthins.com/mthins/goodsPic/".$timestr.".jpg");
+      	echo $pic_add;
+      	if(move_uploaded_file($_FILES["file"]["tmp_name"],"../goodsPic/".$timestr.".jpg"))
       	{
       		 
     
@@ -88,7 +91,7 @@ else
 						}
 						else
 						{
-							$sql="insert into goods (title,price,taobao_price,quan_num,url,goods_type) values ('".$title."','".$price."','".$taobao_price."','".$quan_num."','".$url."','".$good_type."');";
+							$sql="insert into goods (title,price,taobao_price,quan_num,url,goods_type,pic_url) values ('".$title."','".$price."','".$taobao_price."','".$quan_num."','".$url."','".$good_type."','".$pic_add."');";
 							//$sql="insert into goods (title,price,taobao_price,quan_num,url,goods_type) values ('','".$price."',".$taobao_price."','".$quan_num."','".$url."','".$good_type."');";
 							
 							$result=$mysqli->query($sql);
