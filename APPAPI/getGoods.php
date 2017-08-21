@@ -11,7 +11,13 @@
 	else
 	{
 		$sql="select * from goods  limit 10";
+		mysqli_query($mysqli, "set names utf8");
+		//编码设置必须在执行查询前
+
 		$sqlresult=$mysqli->query($sql);
+		$mysqli->query("SET NAMES utf8");
+		//mysql_query("SET NAMES UTF8"); 
+		
 		if($sqlresult)
 		{
 			$goodsList=array();
@@ -29,7 +35,7 @@
 			 $goodsList[]=$goods;
 			}
 			
-			$goodsArray=array("goods"=>$goodsList);
+			$goodsArray=array("error"=>"0","goods"=>$goodsList);
 			echo (json_encode($goodsArray));
 			
 		}
