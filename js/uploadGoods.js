@@ -14,7 +14,18 @@ $(function()
 	}
 	);
 	
+	$("#adfile").change(function()
+	{
+		var objUrl = getObjectURL(this.files[0]);
+		if(objUrl)
+		{
+			$("#adimg").attr("src",objUrl);
+			$("#adimg").css("height","200px");
+			$("#adimg").css("width","200px");
+		}	
+	}
 	
+	)
 	
 	function getObjectURL(file)
 	{

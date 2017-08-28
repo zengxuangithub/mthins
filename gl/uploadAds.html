@@ -2,19 +2,23 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>上传商品</title>
+		<title>轮播广告管理</title>
 		<link rel="stylesheet" href="../css/uploadGoods.css" />
 		<link rel="stylesheet" href="../css/main.css" />
 		<script type="text/javascript" src="../js/jquery.min.js" ></script>
 		<script type="text/javascript" src="../js/uploadGoods.js" ></script>
-		
 	</head>
 	<body>
-	<form action="../API/uploadGoods.php" method="post" enctype="multipart/form-data">
+		<form action="../API/uploadAds.php" method="post" enctype="multipart/form-data">
 		
-		
+		<div class="adBox">
+			<label for="adfile">广告图片</label>
+			<input  type="file" name="adfile" id="adfile"/>
+			<img src="" id="adimg" class="img"/>
+			
+		</div>
 		<div class="picBox">
-			<label for="file">图片</label>
+			<label for="file">商品图片</label>
 			<input  type="file" name="file" id="file"/>
 			<img src="" id="img" class="img"/>
 			

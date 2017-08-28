@@ -4,7 +4,7 @@ form
 	margin: 100px auto;
 	text-align: center;
 }
-form div:not(.picBox)
+form div:not(.picBox ,.adBox)
 {
 	width:400px;
 	height: 30px;
